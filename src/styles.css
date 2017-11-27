@@ -1,0 +1,73 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    background-color: #333;
+}
+
+body * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+#color-picker { 
+    display: flex;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+#color-picker .color-option,
+#color-picker .action
+{
+    display: flex;
+    margin: 4px;
+    width: 36px;
+    height: 36px;
+    cursor: pointer;
+    border-radius: 2px;
+    color: white;
+    background-color: gray;
+    justify-content: center;
+    align-items: center;
+}
+
+#color-picker .action:first-of-type {
+    color: blue;
+}
+
+#color-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    width: 800px;
+    margin: 0 auto;
+}
+
+#color-blocks .block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    width: 128px;
+    height: 128px;
+    background-color: gray;
+    font-size: 3em;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#color-blocks .block.selected {
+    border: 10px dashed white;
+    background-color: #222;
+}
+
+.blue   { background-color: #0074D9 !important; }
+.green  { background-color: #2ECC40 !important; }
+.yellow { background-color: #DFC703 !important; }
+.orange { background-color: #FF851B !important; }
+.red    { background-color: #FF4136 !important; }
+.purple { background-color: #B10DC9 !important; }
+
+.ml30 {
+    margin-left: 30px !important;
+}

@@ -1,0 +1,15 @@
+<div id="color-picker">
+    <div *ngFor = "let color of colors" class="color-option {{color}}" (click) = "colorize(color)"></div>
+
+    <div id="random-sort" class="action ml30" title="Shuffle elements" (click) = "randomize()" >R</div>
+    <div id="alpha-sort" class="action" title="Sort elements" (click) = "sort()">S</div>
+    <div id="clear-selected" class="action" title="Clear colors" (click) = "clear()">C</div>
+</div>
+
+<div id="color-blocks" >
+    <div *ngFor="let block of blocks" 
+         class="block block-{{block.category}} {{ (block.selected) ? 'selected' : ''}} {{ block.color }}"
+         (click) = "selectBlocks(block.category)">
+      {{ block.category | uppercase }}
+    </div>
+</div>
